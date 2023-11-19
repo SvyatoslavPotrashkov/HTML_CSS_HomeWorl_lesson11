@@ -40,6 +40,10 @@ body {
     margin-bottom: 65px;
 }
 
+.main__img {
+    height: 764px;
+}
+
 .main__rectangle {
     margin-right: 16px;
 }
@@ -84,19 +88,26 @@ body {
 .item1 {
     background-image: url(img/women.jpg);
     height: 260px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
 .item2 {
     background-image: url(img/men.jpg);
     height: 260px;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .item3 {
     background-image: url(img/kids.jpg);
     height: 260px;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .item4 {
@@ -104,7 +115,9 @@ body {
     background-repeat: no-repeat;
     width: 1138px;
     height: 180px;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -212,6 +225,11 @@ body {
     padding: 15px 39px;
     color: #F26376;
     text-decoration: none;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .products__item__button {
@@ -220,4 +238,85 @@ body {
     justify-content: center;
     margin-top: 48px;
     margin-bottom: 60px;
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .main__img {
+        max-height: 368px;
+    }
+
+    .main__h1__heading {
+        color: #222;
+        font-family: Lato;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    .main__h2__heading {
+        color: #222;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 220px);
+        gap: 19.9px;
+    }
+
+    .item1 {
+        height: 167.617px;
+    }
+
+    .item2 {
+        height: 167.617px;
+    }
+
+    .item3 {
+        height: 167.617px;
+    }
+
+    .item4 {
+        background-image: url(img/accesories.jpg);
+        background-repeat: no-repeat;
+        width: 700px;
+        height: 116.043px;
+    }
+
+    .products__item__text {
+        grid-column: span 2;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 342px);
+        gap: 16px;
+    }
+
+    .products__img {
+        width: 342px;
+    }
+
+    .products__item__button {
+        max-width: 700px;
+    }
+
+    .product__dsc {
+        gap: 12.65px;
+    }
+
+    .products__item__button {
+        margin-top: 32.48px;
+        margin-bottom: 70.52;
+    }
+
 }
