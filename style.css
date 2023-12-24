@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
 }
 
 .img__left__nav {
@@ -44,9 +45,9 @@ body {
     height: 764px;
 }
 
-.main__rectangle {
+/* .main__rectangle {
     margin-right: 16px;
-}
+} */
 
 .main__h1__heading {
     color: #222;
@@ -77,7 +78,7 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -396,86 +397,7 @@ body {
 
 
 
-@media (min-width: 768px) and (max-width:1024px) {
-    .container {
-        max-width: 700px;
-    }
 
-    .main__img {
-        max-height: 368px;
-    }
-
-    .main__h1__heading {
-        color: #222;
-        font-family: Lato;
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: normal;
-    }
-
-    .main__h2__heading {
-        color: #222;
-        font-family: Lato;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(3, 220px);
-        gap: 19.9px;
-    }
-
-    .item1 {
-        height: 167.617px;
-    }
-
-    .item2 {
-        height: 167.617px;
-    }
-
-    .item3 {
-        height: 167.617px;
-    }
-
-    .item4 {
-        background-image: url(img/accesories.jpg);
-        background-repeat: no-repeat;
-        width: 700px;
-        height: 116.043px;
-    }
-
-    .products__item__text {
-        grid-column: span 2;
-    }
-
-    .grid2 {
-        display: grid;
-        grid-template-columns: repeat(2, 342px);
-        gap: 16px;
-    }
-
-    .products__img {
-        width: 342px;
-    }
-
-    .products__item__button {
-        max-width: 700px;
-    }
-
-    .product__dsc {
-        gap: 12.65px;
-    }
-
-    .products__item__button {
-        margin-top: 32.48px;
-        margin-bottom: 70.52px;
-    }
-
-}
 
 .fluid {
     width: 100%;
@@ -608,6 +530,7 @@ body {
     height: 49px;
     color: #FFF;
     width: 100px;
+    border: 0;
 }
 
 .footer__background_image__img {
@@ -648,6 +571,87 @@ body {
 
 .bot__foot_ic:hover path {
     fill: #Fff;
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .main__img {
+        max-height: 368px;
+    }
+
+    .main__h1__heading {
+        color: #222;
+        font-family: Lato;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    .main__h2__heading {
+        color: #222;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 220px);
+        gap: 19.9px;
+    }
+
+    .item1 {
+        height: 167.617px;
+    }
+
+    .item2 {
+        height: 167.617px;
+    }
+
+    .item3 {
+        height: 167.617px;
+    }
+
+    .item4 {
+        background-image: url(img/accesories.jpg);
+        background-repeat: no-repeat;
+        width: 700px;
+        height: 116.043px;
+    }
+
+    .products__item__text {
+        grid-column: span 2;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 342px);
+        gap: 16px;
+    }
+
+    .products__img {
+        width: 342px;
+    }
+
+    .products__item__button {
+        max-width: 700px;
+    }
+
+    .product__dsc {
+        gap: 12.65px;
+    }
+
+    .products__item__button {
+        margin-top: 32.48px;
+        margin-bottom: 70.52px;
+    }
+
 }
 
 @media (min-width: 320px) and (max-width:767px) {
@@ -721,4 +725,31 @@ body {
         grid-template-columns: 1fr;
     }
 
+}
+
+@media (min-width: 1024px) {
+    .container {
+        min-width: 1024px;
+        max-width: 1024px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 320px);
+    }
+
+    .item4 {
+        width: 1024px;
+    }
+
+    .grid2 {
+        width: 360px;
+    }
+
+    .products__img {
+        width: 320px;
+    }
+
+    .products__item__button {
+        width: 1024px;
+    }
 }
